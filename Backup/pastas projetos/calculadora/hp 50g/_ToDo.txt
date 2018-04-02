@@ -1,0 +1,16 @@
+This pre-pack Emu48 needs a ROM image to work. Because of license reasons ROM's aren't included, but they can be downloaded on several other sites.
+
+Google for these files and drop them into this ROM folder.
+
+ROM.38G (HP38-A 1995)
+ROM.39G (HP39-A 2000 Beta No. 1.36)
+ROM.48G (HP48-R 1993)
+ROM.49G (HP49-B 2001 Revision 1.19-6)
+
+
+Possible links...
+
+http://www.google.com/search?q=rom.38G
+http://www.google.com/search?q=rom.39G
+http://www.hpcalc.org/details.php?id=5936
+http://www.hpcalc.org/details.php?id=4272
