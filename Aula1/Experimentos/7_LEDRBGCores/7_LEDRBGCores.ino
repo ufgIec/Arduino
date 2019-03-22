@@ -1,5 +1,5 @@
 /*
-   Experimento 7 - LEDRGBCores
+   Experimento 1.7 - LEDRGBCores
 
    Controla um LED RGB utilizando PWM para alterar a intensidade de cada LED para gerar novas cores.
 
@@ -15,6 +15,7 @@
 const int R = 9; // Pino conectado ao LED vermelho
 const int G = 10; // Pino conectado ao LED verde
 const int B = 11; // Pino conectado ao LED azul
+
 // Variaveis que irão guardar valores PWM referentes a intensidade de cada cor. 0 == desligado (0V), 255 == intensidade máxima(5V).
 int vRed = 255;
 int vGreen = 0;
@@ -26,6 +27,7 @@ void setup() {
   pinMode(R, OUTPUT);
   pinMode(G, OUTPUT);
   pinMode(B, OUTPUT);
+  
   // Escreve os valores PWM nas saidas dos LEDs
   analogWrite(R, vRed); // vRed == 255, Liga LED vermelha na intensidade máxima.
   analogWrite(G, vGreen); // vGreen == 0, Deslida o LED verde.

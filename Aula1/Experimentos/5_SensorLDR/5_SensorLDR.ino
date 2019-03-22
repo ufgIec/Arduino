@@ -1,5 +1,5 @@
 /*
-   Experimento 5 - SensorLDR
+   Experimento 1.5 - SensorLDR
 
    Utiliza um resistor dependente de luz (LDR*) para medir a intensidade luminosa do ambiente
    e enviar o valor lido na entrada analógica para a porta serial.
@@ -12,7 +12,7 @@
    varia em função a resistencia do LDR, trata-se de um circuito divisor de tensão.
 
    Saiba mais:
-   https://www.arduino.cc/en/tutorial/AnalogInput (inglês)
+   https://www.arduino.cc/en/tutorial/AnalogInput (em inglês)
    https://pt.wikipedia.org/wiki/Divisor_de_tens%C3%A3o
 */
 

@@ -1,5 +1,5 @@
 /*
-   Experimento 4 - Buzzer
+   Experimento 1.4 - Buzzer
 
    Mantem o buzzer apitando enquanto o botão for pressionado.
 */

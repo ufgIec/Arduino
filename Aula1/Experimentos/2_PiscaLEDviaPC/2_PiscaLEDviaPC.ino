@@ -1,5 +1,5 @@
 /*
-   Experimento 2 - PiscaLEDviaPC
+   Experimento 1.2 - PiscaLEDviaPC
 
    Controla 3 LEDs utilizando a porta serial para receber os comandos para ligar e desligar. Envie os comandos
    pelo monitor serial da ide oficial (Ctrl+Shift+M).

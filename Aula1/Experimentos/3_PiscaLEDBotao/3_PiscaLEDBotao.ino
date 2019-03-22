@@ -1,5 +1,5 @@
 /*
-   Experimento 3 - PiscaLEDBotao
+   Experimento 1.3 - PiscaLEDBotao
 
    Mantem um LED ligado enquanto o botão estiver pessionado e imprime na porta serial o estado
    do LED. Utilize o monitor serial da ide oficial (Ctrl+Shift+M) para leitura dos dados.
@@ -16,9 +16,9 @@
 void setup() {
   // Inicia a comunicação serial utilizando a velocidade de 9600bps.
   Serial.begin(9600);
-  // Inicializa o pino digitai 2 como uma entrada.
+  // Inicializa o pino digital 2 como uma entrada.
   pinMode(2, INPUT);
-  // Inicializa o pino digitai 13 como uma saida.
+  // Inicializa o pino digital 13 como uma saida.
   pinMode(13, OUTPUT);
 }
 

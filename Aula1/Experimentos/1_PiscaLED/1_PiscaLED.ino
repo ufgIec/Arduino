@@ -1,5 +1,5 @@
 /*
-   Experimento 1 - PiscaLed
+   Experimento 1.1 - PiscaLed
 
    Liga um LED por um segundo, depois desliga por um segundo, repetidamente.
 

@@ -1,5 +1,5 @@
 /*
-   Experimento 6 - LEDRGB
+   Experimento 1.6 - LEDRGB
 
    Controla um LED RGB ligando as cores alternadamente.
 
