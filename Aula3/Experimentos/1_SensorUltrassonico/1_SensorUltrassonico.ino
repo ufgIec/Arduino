@@ -2,10 +2,12 @@
    Experimento 3.1 - SensorUltrasonico
 
    Mede a distancia entre o sensor e o objeto em sua frente e imprime na porta serial.
+
+   Esse codigo utiliza a biblioteca Ultrasonic.h disponivel em https://github.com/filipeflop/Ultrasonic
 */
 
 //Incluindo biblioteca Ultrasonic.h
-#include "Ultrasonic.h"
+#include <Ultrasonic.h>
 
 //Criando objeto ultrasonic e definindo as portas digitais: Trigger == 7 e Echo == 6
 Ultrasonic ultrasonic(7, 6);
