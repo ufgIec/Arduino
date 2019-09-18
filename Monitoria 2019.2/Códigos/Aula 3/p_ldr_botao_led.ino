@@ -10,6 +10,7 @@ int ldrValor = 0; //Valor lido do LDR
 void setup(){
     pinMode(ledPin, OUTPUT); //Pino do led será saída
     pinMode(Botao, INPUT); //Pino com botão será entrada
+    pinMode(ldrPin = INPUT);
 }
 
 void loop(){
