@@ -8,9 +8,10 @@ int ldrValor = 0; //Valor lido do LDR
 
 
 void setup(){
+    Serial.begin(9600);
     pinMode(ledPin, OUTPUT); //Pino do led será saída
     pinMode(Botao, INPUT); //Pino com botão será entrada
-    pinMode(ldrPin = INPUT);
+    pinMode(ldrPin, INPUT);
 }
 
 void loop(){
@@ -19,6 +20,9 @@ void loop(){
  
  //se o valor lido for maior que 500, liga o led
  if (ldrValor>= 800){  
+    
+    Serial.print(ldrValor);
+    Serial.print("Ta de dia");
     estadoBotao = digitalRead(Botao); //le o estado do botão - HIGH OU LOW
 
     if (estadoBotao == HIGH){ //Se botão estiver pressionado (HIGH)
@@ -29,7 +33,8 @@ void loop(){
     }
 }
    else if (ldrValor<= 800){  
-
+        Serial.print(ldrValor);
+        Serial.print("Ta de noite");
         digitalWrite(ledPin, HIGH); // acende o led do pino 2.
     }
 
