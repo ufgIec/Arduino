@@ -12,27 +12,29 @@ void setup()
  
 void loop()
 {
-  //Limpa a tela
   lcd.clear();
   //Posiciona o cursor na coluna 3, linha 0;
-  lcd.setCursor(3, 0);
+  lcd.setCursor(1, 0);
   //Envia o texto entre aspas para o LCD
-  lcd.print("MONITORIA");
+  lcd.print("TU E LINDA,");
   lcd.setCursor(3, 1);
-  lcd.print(" IEC ");
+  lcd.print(" SABIA?");
+  //Limpa a tela
+   delay(4000);
+     lcd.clear();
+  //Posiciona o cursor na coluna 3, linha 0;
+  lcd.setCursor(1, 0);
+  //Envia o texto entre aspas para o LCD
+  lcd.print("OBRIGADO POR");
+  lcd.setCursor(3, 1);
+  lcd.print(" TUDO!");
+     delay(4000);
+  lcd.clear();
+  //Posiciona o cursor na coluna 3, linha 0;
+  lcd.setCursor(1, 0);
+  //Envia o texto entre aspas para o LCD
+  lcd.print("FELIZ 5 MESES");
+  lcd.setCursor(3, 1);
+  lcd.print(" TE AMO!");
   delay(5000);
-   
-  //Rolagem para a esquerda
-  for (int posicao = 0; posicao < 3; posicao++)
-  {
-    lcd.scrollDisplayLeft();
-    delay(300);
-  }
-   
-  //Rolagem para a direita
-  for (int posicao = 0; posicao < 6; posicao++)
-  {
-    lcd.scrollDisplayRight();
-    delay(300);
-  }
 }
