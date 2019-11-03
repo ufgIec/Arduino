@@ -16,25 +16,8 @@ void loop()
   //Posiciona o cursor na coluna 3, linha 0;
   lcd.setCursor(1, 0);
   //Envia o texto entre aspas para o LCD
-  lcd.print("TU E LINDA,");
+  lcd.print("UFG");
   lcd.setCursor(3, 1);
-  lcd.print(" SABIA?");
-  //Limpa a tela
-   delay(4000);
-     lcd.clear();
-  //Posiciona o cursor na coluna 3, linha 0;
-  lcd.setCursor(1, 0);
-  //Envia o texto entre aspas para o LCD
-  lcd.print("OBRIGADO POR");
-  lcd.setCursor(3, 1);
-  lcd.print(" TUDO!");
-     delay(4000);
+  lcd.print("IEC");
   lcd.clear();
-  //Posiciona o cursor na coluna 3, linha 0;
-  lcd.setCursor(1, 0);
-  //Envia o texto entre aspas para o LCD
-  lcd.print("FELIZ 5 MESES");
-  lcd.setCursor(3, 1);
-  lcd.print(" TE AMO!");
-  delay(5000);
 }
