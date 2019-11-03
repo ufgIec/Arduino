@@ -20,4 +20,5 @@ void loop()
   lcd.setCursor(3, 1);
   lcd.print("IEC");
   lcd.clear();
+  delay(5000);
 }
