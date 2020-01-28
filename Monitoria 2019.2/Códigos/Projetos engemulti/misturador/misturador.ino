@@ -116,39 +116,42 @@ void readColor() {
   Serial.println("  ");
   delay(150);
   lcd.setBacklight(HIGH);
-lcd.setCursor(0,0);
-lcd.print("Azul:");
-   lcd.print(B);
-   lcd.setCursor(0,1);
-   lcd.print("Vermelho:");
-   lcd.print(R);
-   lcd.setCursor(8,0);
-   lcd.print("Verde:");
-   lcd.print(G);
-  if(R<45 && R>40 && G<56 && G>50 && B<36 && B>32 ){
+  lcd.clear();
+lcd.setCursor(2,0);
+lcd.print("MOSTRE A COR");
+lcd.setCursor(3,1);
+lcd.print("AO SENSOR");
+  if(R>25 && R<45 && G>70 && G<135 && B>50 && B<100 ){
+    lcd.clear();
+    lcd.setCursor(3,1);
+   lcd.print("VERMELHO!");
     color = 1; //Para ser usado pelo servo de baixo em seu posicionamento
     flag = 2; // Para enviar a máquina ao terceiro estado
     Serial.println(" Rosa ");//Escreve no monitor serial a cor detectada
   }
-  if(R<46 && R>42 && G<59 && G>54 && B<42 && B>36){
-    color = 2; 
-    flag = 2;
-    Serial.println(" Laranja ");
+  if(R>70 && R<110 && G>90 && G<120 && B>65 && B<90 ){
+    lcd.clear();
+    lcd.setCursor(3,1);
+   lcd.print("AZUL!");
+    color = 3; //Para ser usado pelo servo de baixo em seu posicionamento
+    flag = 2; // Para enviar a máquina ao terceiro estado
+    Serial.println(" AZUL! ");//Escreve no monitor serial a cor detectada
   }
-  if(R<56 && R>48 && G<58 && G>50 && B<42 && B>37){
-    color = 3; 
-    flag = 2;
-    Serial.println(" Verde ");
+    if(R>80 && R<120 && G>60 && G<90 && B>60 && B<90 ){
+    lcd.clear();
+    lcd.setCursor(3,1);
+   lcd.print("VERDE!");
+    color = 5; //Para ser usado pelo servo de baixo em seu posicionamento
+    flag = 2; // Para enviar a máquina ao terceiro estado
+    Serial.println(" VERDE! ");//Escreve no monitor serial a cor detectada
   }
-  if(R<45 && R>38 && G<51 && G>43 && B<39 && B>33){
-    color = 4; 
-    flag = 2;
-    Serial.println(" Amarelo ");
-  }
-  if(R<56 && R>49 && G<56 && G>48 && B<37 && B>31){
-    color = 5; 
-    flag = 2;
-    Serial.println(" Azul ");
+  if(R>80 && R<120 && G>60 && G<90 && B>60 && B<90 ){
+    lcd.clear();
+    lcd.setCursor(3,1);
+   lcd.print("VERDE!");
+    color = 5; //Para ser usado pelo servo de baixo em seu posicionamento
+    flag = 2; // Para enviar a máquina ao terceiro estado
+    Serial.println(" VERDE! ");//Escreve no monitor serial a cor detectada
   }
   else Serial.println("No Match");
 }
